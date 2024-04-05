@@ -1,0 +1,207 @@
+/* .main {
+  display: flex;
+} */
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3d405b;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  padding: 16px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Create Page */
+
+.create_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.create_container {
+  margin-top: 10vh;
+}
+
+.dropdown {
+  min-width: 100px;
+}
+.dropdown_btn {
+  font-size: 16px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 40px;
+  width: auto;
+  padding: 0 30px;
+  cursor: pointer;
+  color: black;
+}
+.dropdown_btn:hover,
+.dropdown_btn:focus {
+  background: #f2f2f2;
+}
+
+.dropdown_items {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 200px;
+  position: absolute;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border: 1px solid black;
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+.dropdown_item {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  cursor: pointer;
+}
+.dropdown_item:not(first-child) {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.dropdown_item:not(last-child) {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.isVisible {
+  visibility: visible;
+}
+.isHidden {
+  visibility: hidden;
+}
+/* .dropdown_link {
+  color: black;
+} */
+.create_cameraCont {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  align-items: center;
+}
+
+.create_camera {
+  width: 20vw;
+}
+
+.create_imgCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+.create_imgCont img {
+  width: 20vw;
+}
+
+.create_camerabtn {
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 10em;
+  border-radius: 1rem;
+  color: #3d405b;
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+}
+
+.create_camerabtn:active {
+  color: white;
+  box-shadow: 0 0.2rem #dfd9d9;
+  transform: translateY(0.2rem);
+}
+
+.create_camerabtn:hover:not(:disabled) {
+  background: #3d405b;
+  color: white;
+  text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.create_camerabtn:disabled {
+  cursor: auto;
+  color: grey;
+}
+
+/* pdf viewer */
+.report {
+  height: 100vh;
+  width: 100vw;
+  margin-top: -2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+}
+
+.pdfViewer {
+  width: 100vw;
+  height: 1000;
+}
+
+/* All Reports */
+.allreportsMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.allReportCont {
+}
+
+.allReportSubCont {
+}
+
+.reportCont {
+}
